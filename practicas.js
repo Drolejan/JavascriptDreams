@@ -36,3 +36,46 @@ else if(platziPlan=="expert+"){
 else{
     console.log("Ese plan no existe....... aun");
 }
+
+let i=0;
+while(i<5){
+    console.log("El valor de i es: " + i);
+    i++;
+}
+
+let j=10;
+while(j>=2){
+    console.log("El valor de j es: " + j);
+    j--;
+}
+
+let respuesta = prompt("Cuanto es 2+2");
+if(respuesta=="4"){
+    console.log("Eres un genio...");
+}
+else{
+    console.log("Tas bien?");
+}
+
+function listaprint(lis){
+    for(const val of lis){
+        console.log(val);
+    }
+    return console.log("El primer valor es: "+lis[0]);
+}
+
+let listilla=["hey","como","estas"];
+listaprint(listilla);
+
+let miObjeto={
+    detalles: 'Un Objeto ',
+    precio: 'Inbox '
+}
+
+function analizadorDeObjetos(obj){
+    Object.values(obj).forEach((elem) => {
+        console.log(elem);
+      });
+}
+
+analizadorDeObjetos(miObjeto);
