@@ -79,3 +79,5 @@ function analizadorDeObjetos(obj){
 }
 
 analizadorDeObjetos(miObjeto);
+
+//Prueba
