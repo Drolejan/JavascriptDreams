@@ -75,8 +75,15 @@ function calcularModa(lista2){
       return elementoA[1] - elementoB[1];
     }
   );
+
+  let moda;
   
-  const moda = lista2Array[lista2Array.length - 1];
+  if(lista2Array[lista2Array.length - 1][1]==lista2Array[lista2Array.length - 2][1]){
+    moda = "Las Modas son:  " + lista2Array[lista2Array.length - 1] + " y " + lista2Array[lista2Array.length - 2]
+  }
+  else {
+   moda = "La Moda es: "+lista2Array[lista2Array.length - 1];
+  }
 
   return moda;
 }
